@@ -1,0 +1,44 @@
+{
+  "android": {
+    "platformName": "android",
+    "noSign": true,
+    "deviceName": "android",
+    "uiautomator2ServerInstallTimeout":60000,
+    "appPackage": "com.daft.ie",
+    "appActivity": "com.daft.ie.ui.main.MainActivity",
+    "app": "./build/daftandroid.apk"
+  },
+  "iOS": {
+    "platformName": "iOS",
+    "app": {
+      "simulator": "https://github.com/saikrishna321/VodQaAdvancedAppium/raw/master/vodqa.zip"
+    },
+    "wdaLaunchTimeout": 80000,
+    "wdaConnectionTimeout": 80000,
+    "preventWDAAttachments": false,
+    "clearSystemFiles": true,
+    "shouldUseSingletonTestManager": false,
+    "simpleIsVisibleCheck": true,
+    "maxTypingFrequency": 10,
+    "isHeadless": true,
+    "fullReset": false
+  },
+  "hostMachines": [
+    {
+      "machineIP": "127.0.0.1",
+      "simulators": [
+        {
+          "deviceName": "iPhone 6",
+          "OS": "11.0"
+        },
+        {
+          "deviceName": "iPhone 7",
+          "OS": "11.0"
+        }
+      ]
+    }
+  ],
+  "excludeLocalDevices": false,
+  "ATDServiceHost":"127.0.0.1",
+  "ATDServicePort":"3000"
+}
